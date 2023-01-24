@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>All books</title>
+  </head>
+  <body>
+    <table>
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Authors</th>
+            <th>Favorite</th>
+            <th>Cover</th>
+            <th>File Name</th>
+            <th>File Book</th>
+            <th>ID</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% books.forEach(function(book) { %>
+            <tr>
+              <td><%= book.title %></td>
+              <td><%= book.description %></td>
+              <td><%= book.authors %></td>
+              <td><%= book.favorite %></td>
+              <td><%= book.fileCover %></td>
+              <td><%= book.fileName %></td>
+              <td><%= book.fileBook %></td>
+              <td><%= book.id %></td>
+            </tr>
+          <% }); %>
+        </tbody>
+      </table>
+  </body>
+</html>
